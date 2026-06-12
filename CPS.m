@@ -1,6 +1,6 @@
 function [X,r] = CPS(n)
 % Circle packing in a square
-    
+
     rng(42);
     lb = [zeros(1, 2*n) 0];
     ub = [ones(1, 2*n) .5];
