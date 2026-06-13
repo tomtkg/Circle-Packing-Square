@@ -28,8 +28,8 @@ function [X,r] = CPC(n)
 end
 
 function [c, ceq] = constraints(x)
-    X = reshape(x(1:end-1), 2, [])';
+    X = reshape(x(1:end-1), 2, []);
     r = x(end);
-    c = [(2*r-pdist(X)) vecnorm(X)+r-1];
+    c = [(2*r-pdist(X')) vecnorm(X)+r-1];
     ceq = [];
 end
