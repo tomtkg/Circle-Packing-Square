@@ -35,4 +35,5 @@ function plotCircles(X, r)
     for i = 1:height(X)
         plot(X(i,1)+r*cos(t), X(i,2)+r*sin(t), 'k');
     end
+    scatter(X(:,1), X(:,2), 'k', 'filled');
 end
